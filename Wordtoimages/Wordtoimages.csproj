@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AntdUI" Version="1.6.6" />
+    <PackageReference Include="ReaLTaiizor" Version="3.8.0.7" />
+    
+    <PackageReference Include="SunnyUI" Version="3.7.0" />
+  </ItemGroup>
+
+  
+
+  
+
+  <PropertyGroup>
+   <ApplicationIcon>Untitled-2.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  
+
+  
+
+  <ItemGroup>
+    <Reference Include="Spire.Doc">
+      <HintPath>..\..\..\..\Downloads\Spire.Office 8.5.3\Crack\Spire.Doc.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf">
+      <HintPath>..\..\..\..\Downloads\Spire.Office 8.5.3\Crack\Spire.Pdf.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
